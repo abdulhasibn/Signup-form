@@ -89,7 +89,7 @@ input:not(.btn) {
 }
 input:not(.btn):focus {
   outline: 0;
-  border: 4px solid #596d48;
+  border: 2px solid #596d48;
   box-shadow: -1px 4px 44px 0px rgba(89, 109, 72, 0.88);
   -webkit-box-shadow: -1px 4px 44px 0px rgba(89, 109, 72, 0.88);
   -moz-box-shadow: -1px 4px 44px 0px rgba(89, 109, 72, 0.88);
