@@ -26,7 +26,8 @@
             <p>
               This is not a real online service! Lorem ipsum dolor sit amet
               consectetur, adipisicing elit. Necessitatibus, commodi! Sign up
-              now to get started.This is not a real online service!
+              now to get started.This is not a real online service! <br />
+              Fields with an "*" symbol are required ones.
             </p>
           </div>
           <div class="form-elements">
@@ -53,7 +54,7 @@
               </div>
               <div class="element">
                 <label for="phone_number">Phone Number </label>
-                <input type="text" id="phone_number" name="Phone Number" />
+                <input type="tel" id="phone_number" name="Phone Number" />
               </div>
             </div>
             <div>
@@ -61,13 +62,24 @@
                 <label for="pwd"
                   >Password <span aria-label="required">*</span></label
                 >
-                <input type="text" id="pwd" name="Password" required />
+                <input
+                  type="password"
+                  id="pwd"
+                  name="Password"
+                  pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$
+                "
+                  required
+                />
+                <p>
+                  Your password must contain an uppercase, a lowercase, a number
+                  , a special character and a minimum of 8 characters
+                </p>
               </div>
               <div class="element">
                 <label for="c_pwd"
                   >Confirm Password <span aria-label="required">*</span></label
                 >
-                <input type="text" id="c_pwd" name="Password" required />
+                <input type="password" id="c_pwd" name="Password" required />
               </div>
             </div>
           </div>

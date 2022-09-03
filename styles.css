@@ -60,7 +60,7 @@ form {
 .form-elements {
   display: flex;
   flex-direction: column;
-  gap: 4em;
+  gap: 3em;
   justify-content: center;
   align-items: center;
   background-color: whitesmoke;
@@ -72,7 +72,7 @@ form {
 }
 .form-elements > div {
   display: flex;
-  gap: 10em;
+  gap: 5em;
 }
 label {
   display: block;
@@ -103,7 +103,6 @@ input:not(.btn):focus {
   border-radius: 10px;
   border: 0;
   cursor: pointer;
-  margin-top: 2em;
   transition: 0.4s;
 }
 .btn:hover {
@@ -111,4 +110,11 @@ input:not(.btn):focus {
 }
 .btn_container {
   text-align: center;
+}
+input[type="password"] + p {
+  font-size: 0.7em;
+  text-align: center;
+}
+input:focus:invalid {
+  border: 2px solid red;
 }
