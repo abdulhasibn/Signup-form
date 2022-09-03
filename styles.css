@@ -40,6 +40,9 @@ form {
   gap: 3em;
   margin: 3em;
 }
+.description {
+  text-align: center;
+}
 .form-elements {
   display: flex;
   flex-direction: column;
